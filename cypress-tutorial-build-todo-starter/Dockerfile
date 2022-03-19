@@ -1,6 +1,5 @@
 FROM node:12-slim
 WORKDIR /app
-COPY package.json ./app
-RUN npm install
 COPY . /app
+RUN npm install && pwd && ls -la && chmod +x node_modules/.bin/*
 CMD npm run dev

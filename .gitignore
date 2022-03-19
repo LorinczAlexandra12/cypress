@@ -1,1 +1,3 @@
 /cypress-tutorial-build-todo-starter/node_modules
+/cypress-tutorial-build-todo-starter/cypress/videos
+/cypress-tutorial-build-todo-starter/cypress/screenshots
