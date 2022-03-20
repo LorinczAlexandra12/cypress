@@ -3,17 +3,14 @@ version: '3'
 services:
     node-app:
         build: ./cypress-tutorial-build-todo-starter
-#        volumes:
-#            - ./cypress-tutorial-build-todo-starter:/usr/src/app
         ports:
             - 3030:3030
     cypress:
-        image: cypress/base:14
+        image: cypress/included:9.5.2
         depends_on:
             - node-app
         environment:
             - CYPRESS_baseUrl=http://node-app:3030
-        command: bash -c "npm ci && npm run cypress:all"
         volumes:
             - ./cypress-tutorial-build-todo-starter:/app
         working_dir: /app
