@@ -14,3 +14,13 @@ services:
         volumes:
             - ./cypress-tutorial-build-todo-starter:/app
         working_dir: /app
+    orchestrator:
+        build: ./flask
+        ports:
+            - 5000:5000
+        volumes:
+          - .:/code
+    prometheus:
+        image: prom/prometheus
+        ports:
+          - 9090:9090
