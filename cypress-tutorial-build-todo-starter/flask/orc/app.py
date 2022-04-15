@@ -18,8 +18,7 @@ def home():
 @app.route("/results")
 def res():
     longlist = list()
-    # what is the path??
-    for file in os.listdir('/code/cypress-tutorial-build-todo-starter/results'):
+    for file in os.listdir('./results/'):
         tree = ET.parse(file)
         root = tree.getroot()
         for child in root:
