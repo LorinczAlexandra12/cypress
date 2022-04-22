@@ -17,16 +17,18 @@ def home():
 
 @app.route("/results")
 def res():
-    longlist = list()
-    for file in os.listdir('./results/'):
-        tree = ET.parse(file)
+    longlist = ""
+    metric_name = "test_"
+    index = 1
+    for file in os.listdir(".\\results\\"):
+        tree = ET.parse(".\\results\\" + file)
         root = tree.getroot()
         for child in root:
-            c = str(child.tag) + str(child.attrib)
-            longlist.append(c)
-            for grandchild in child:
-                c = str(grandchild.tag) + str(grandchild.attrib)
-                longlist.append(c)
+            c = metric_name + str(index) + "{name=\"" + str(child.attrib["name"]) + "\", timestamp=\"" + str(
+                child.attrib["timestamp"]) + "\", tests=\"" + str(child.attrib["tests"]) + "\", time=\"" + str(
+                child.attrib["time"])+ "\", failures=\"" + str(child.attrib["failures"]) + "\"}"
+            index = index + 1
+            longlist = longlist + c
     return longlist
 
 
