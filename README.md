@@ -24,13 +24,22 @@ Orchestrátor komponens + Prométeusz komponens a projekthez adva
 - Valamiért nem "találja" az xml fájlokat a mappában. Első sorban arra gyanakodtam, hogy nincsen futtatási/olvasási jog a fájlokhoz, de a jog hozzáadása se oldotta meg a problémát
 
 ##### Todo:
-- Path megtalálásának megfixálása (ebben szeretnék segítséget kérni :) )
-- XMl fájlok contentjének kiírátasának átformálása megfelelő struktúrára
-- Oldal felkeresés helyett időzített cypress futtatás (cron)
+- Path megtalálásának megfixálása (ebben szeretnék segítséget kérni :) ) :white_check_mark:
+- XMl fájlok contentjének kiírátasának átformálása megfelelő struktúrára :white_check_mark:
+- Oldal felkeresés helyett időzített cypress futtatás (cron) 
 
 #### Prometheus
 - Docker image a yaml filehoz adva, megfelelő porton fut is az alkalmazás
 
 ##### Todo:
-- Adatok bekötése
-- Összekötés Grafanával
+- Adatok bekötése :white_check_mark:
+- Összekötés Grafanával :white_check_mark:
+
+## 04.23.
+- XML adatstruktúra kijavítva
+- Prometheus.yml szerkesztve, adatok megjelennek
+- Grafana configurálva a Prométheussal
+- Kész panelek
+
+#### Todo:
+- Időzített futtatás
