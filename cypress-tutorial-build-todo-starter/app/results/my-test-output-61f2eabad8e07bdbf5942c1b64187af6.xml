@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-21T18:27:17" tests="0" file="cypress/integration/smoke-test.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Smoke test" timestamp="2022-04-21T18:27:17" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="With no todos" timestamp="2022-04-21T18:27:17" tests="1" time="0.0000" failures="1">
+    <testcase name="Smoke test With no todos Save new todos" time="0.0000" classname="Save new todos">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.todo-list li`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.todo-list li`, but never found it.
+    at Context.eval (http://node-app:3030/__cypress/tests?p=cypress/integration/smoke-test.spec.js:121:33)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

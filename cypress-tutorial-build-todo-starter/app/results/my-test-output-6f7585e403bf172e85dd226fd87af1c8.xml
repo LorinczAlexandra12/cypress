@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.2880" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-04-23T11:38:08" tests="0" file="cypress/integration/footer.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Footer" timestamp="2022-04-23T11:38:08" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="With a single todo" timestamp="2022-04-23T11:38:08" tests="1" time="0.5750" failures="0">
+    <testcase name="Footer With a single todo Displays a singular todo in count" time="0.5750" classname="Displays a singular todo in count">
+    </testcase>
+  </testsuite>
+  <testsuite name="With multiple todos" timestamp="2022-04-23T11:38:09" tests="2" time="0.7130" failures="0">
+    <testcase name="Footer With multiple todos Displays plural todos in count" time="0.1770" classname="Displays plural todos in count">
+    </testcase>
+    <testcase name="Footer With multiple todos Handles filter links" time="0.5360" classname="Handles filter links">
+    </testcase>
+  </testsuite>
+</testsuites>

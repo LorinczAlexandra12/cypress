@@ -1,6 +1,6 @@
 import os
 import docker
-from flask import Flask
+from flask import Flask, Response
 import xml.etree.ElementTree as ET
 app = Flask(__name__)
 
@@ -18,18 +18,17 @@ def home():
 @app.route("/results")
 def res():
     longlist = ""
-    metric_name = "test_"
-    index = 1
-    for file in os.listdir(".\\results\\"):
-        tree = ET.parse(".\\results\\" + file)
+    metric_name = "test"
+    for file in os.listdir("/code/results/"):
+        tree = ET.parse("/code/results/" + file)
         root = tree.getroot()
         for child in root:
-            c = metric_name + str(index) + "{name=\"" + str(child.attrib["name"]) + "\", timestamp=\"" + str(
-                child.attrib["timestamp"]) + "\", tests=\"" + str(child.attrib["tests"]) + "\", time=\"" + str(
-                child.attrib["time"])+ "\", failures=\"" + str(child.attrib["failures"]) + "\"}"
-            index = index + 1
-            longlist = longlist + c
-    return longlist
+            test_runtime = metric_name  + "_runtime" + "{name=\"" + str(child.attrib["name"]) + "\", timestamp=\"" + str(
+                child.attrib["timestamp"]) + "\"} " + str(child.attrib["time"]) + "\n"
+            test_failures = metric_name  + "_failure" + "{name=\"" + str(child.attrib["name"]) + "\", timestamp=\"" + str(
+                child.attrib["timestamp"]) + "\"} " + str(child.attrib["failures"]) + "\n"
+            longlist = longlist + test_runtime + test_failures
+    return Response(longlist, mimetype='text/plain')
 
 
 if __name__ == "__main__":

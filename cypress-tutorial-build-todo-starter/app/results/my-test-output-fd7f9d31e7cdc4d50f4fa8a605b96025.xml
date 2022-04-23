@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.5350" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-04-23T13:49:04" tests="0" file="cypress/integration/list-item.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="List items" timestamp="2022-04-23T13:49:04" tests="4" time="1.5350" failures="0">
+    <testcase name="List items properly displays completed items" time="0.7710" classname="properly displays completed items">
+    </testcase>
+    <testcase name="List items Shows remaining todos in the footer" time="0.1860" classname="Shows remaining todos in the footer">
+    </testcase>
+    <testcase name="List items Removes a todo" time="0.2850" classname="Removes a todo">
+    </testcase>
+    <testcase name="List items Marks an incomplete item complete" time="0.2930" classname="Marks an incomplete item complete">
+    </testcase>
+  </testsuite>
+</testsuites>

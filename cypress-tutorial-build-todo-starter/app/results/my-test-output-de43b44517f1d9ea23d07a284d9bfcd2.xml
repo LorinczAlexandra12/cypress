@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.2880" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-04-22T10:41:52" tests="0" file="cypress/integration/input-form.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Input form" timestamp="2022-04-22T10:41:52" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Form submission" timestamp="2022-04-22T10:41:52" tests="1" time="1.2880" failures="0">
+    <testcase name="Input form Form submission Adds a new todo on submit" time="1.2880" classname="Adds a new todo on submit">
+    </testcase>
+  </testsuite>
+</testsuites>

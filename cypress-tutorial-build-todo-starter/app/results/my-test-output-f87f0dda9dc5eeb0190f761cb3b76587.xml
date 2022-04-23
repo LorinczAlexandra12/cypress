@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.6270" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-04-23T10:09:26" tests="0" file="cypress/integration/app-init.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="App initialization" timestamp="2022-04-23T10:09:26" tests="2" time="0.6270" failures="0">
+    <testcase name="App initialization Loads todos on page load" time="0.4870" classname="Loads todos on page load">
+    </testcase>
+    <testcase name="App initialization Display an error on failure" time="0.1400" classname="Display an error on failure">
+    </testcase>
+  </testsuite>
+</testsuites>
