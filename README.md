@@ -36,6 +36,7 @@ Orchestrátor komponens + Prométeusz komponens a projekthez adva
 - Összekötés Grafanával :white_check_mark:
 
 ## 04.23.
+### Progress:
 - XML adatstruktúra kijavítva
 - Prometheus.yml szerkesztve, adatok megjelennek
 - Grafana configurálva a Prométheussal
